@@ -1,0 +1,37 @@
+
+
+<div style="text-align: center;">
+
+    <p>binding works!</p><br>
+
+First NAME:
+<input type="text"  #Fname> <br>
+
+
+LAST NAME:
+<input type="text" #Lname>
+
+<input type="submit" value="CLICK" (click)="abc(Fname.value,Lname.value)">
+
+
+
+
+</div>
+
+<hr>
+
+{{myname}}<br>
+
+
+<div  style="text-align: center;">
+
+ Princip: <input type="text" #p > <br>
+Time: <input type="text" #t> <br>
+ROI: <input type="text" #r> <br>
+TOTAL: <input type="text" value="{{total}}"> <br>
+EMI: <input type="text" value="{{emi}}}"> <br>
+
+<input type="submit" value="CALCULATE" (click)="cal(p.value,t.value,r.value)">
+
+
+</div>
